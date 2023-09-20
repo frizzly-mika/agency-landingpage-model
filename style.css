@@ -180,7 +180,63 @@ section.cta a {
     margin: 30px 0 60px 0;
 }
 
+section.beneficios {
+    padding: 100px 0;
+}
+
+section.beneficios>.center {
+    max-width: 1280px;
+    vertical-align: top;
+}
+
+.box-beneficios {
+    width: 50%;
+    padding: 45px 5px 0 0;
+}
+
+.box-beneficios h2 {
+    font-size: 40px;
+}
+
+.lista-beneficios {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #7E92AC;
+}
+
+.lista-beneficios img {
+    width: 70px;
+}
+
+.btn-lista-beneficios {
+    margin: 25px;
+}
+
+.btn-lista-beneficios a {
+    background: #0F3FD3;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.img-beneficios {
+    width: 50%;
+    padding: 5px;
+}
+
+.img-beneficios img {
+    max-width: 100%;
+}
+
+
 @media screen and (max-width: 768px) {
+
+    
     .diferenciais {
         flex-wrap: wrap;
     }
@@ -199,5 +255,10 @@ section.cta a {
     section.brands img {
         max-width: 200px;
         width: 100%;
+    }
+
+    .box-beneficios, .img-beneficios{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
