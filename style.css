@@ -141,10 +141,44 @@ section.porque-nos>.center>p {
     margin-bottom: 20px;
 }
 
-.box-diferenciais img{
+.box-diferenciais img {
     margin-left: -28px;
 }
 
+section.cta {
+    background-image: url('images/banner.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 200px;
+    text-align: center;
+    color: white;
+}
+
+section.cta h2 {
+    font-weight: normal;
+    padding: 15px 0;
+    margin-top: 45px;
+    font-size: 50px;
+}
+
+section.cta h4 {
+    font-weight: normal;
+    padding: 15px 0;
+}
+
+section.cta a {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    background: #FFDD33;
+    text-decoration: none;
+    color: #0F3FD3;
+    text-transform: uppercase;
+    margin: 30px 0 60px 0;
+}
 
 @media screen and (max-width: 768px) {
     .diferenciais {
@@ -156,7 +190,7 @@ section.porque-nos>.center>p {
         margin-right: 0;
     }
 
-    section.brands > .center {
+    section.brands>.center {
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
