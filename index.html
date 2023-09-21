@@ -29,6 +29,14 @@
                     <a href="#">Depoimento</a>
                     <a class="contact-btn" href="#">Entre em contato</a>
                 </div>
+                <div class="items-menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="menu-mobile">
+                        <a href="#">Início</a>
+                        <a href="#">Por que nós?</a>
+                        <a href="#">Depoimento</a>
+                    </div>
+                </div>
             </div><!-- menu-->
             <div class="mockup">
                 <h1>Promova <b>experiências</b> aos seus clientes</h1>
@@ -180,6 +188,20 @@
         </div>
     </section>
 
+    <footer>
+        <div class="center">
+            <div class="text-footer">
+                <p>Todos os direitos reservados</p>
+            </div>
+            <div class="items-menu">
+                <a href="#">Início</a>
+                <a href="#">Por que nós?</a>
+                <a href="#">Depoimento</a>
+                <a class="contact-btn" href="#">Contato</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="jquery.js"></script>
     <script src="slick.min.js"></script>
     <script>
@@ -200,6 +222,19 @@
                         slidesToScroll: 1
                     }
                 }],
+        });
+    </script>
+    <script>
+        var menuBtn = document.querySelector('.items-menu-mobile i');
+        menuBtn.addEventListener('click', ()=> {
+            let itemsMenu = document.querySelector('.menu-mobile');
+            if(itemsMenu.classList.contains('show')){
+            itemsMenu.classList.remove('show');
+            itemsMenu.classList.add('hide');
+        }else {
+            itemsMenu.classList.remove('hide');
+            itemsMenu.classList.add('show');
+        }
         });
     </script>
 

@@ -323,11 +323,11 @@ section.contato {
     text-align: center;
 }
 
-section.contato h2{
+section.contato h2 {
     margin: 100px 0 40px 0;
 }
 
-section.contato>.center{
+section.contato>.center {
     max-width: 500px;
 }
 
@@ -335,7 +335,7 @@ section.contato h2 {
     font-size: 40px;
 }
 
-section.contato form{
+section.contato form {
     width: 100%;
 }
 
@@ -361,7 +361,7 @@ section.contato form{
     resize: vertical;
 }
 
-.contato input[type=submit]{
+.contato input[type=submit] {
     width: 100%;
     height: 50px;
     display: block;
@@ -373,8 +373,91 @@ section.contato form{
     border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
+footer {
+    padding: 10px 0;
+    background-color: #255AFF;
+    color: white;
+}
 
+footer .center {
+    max-width: 1280px;
+}
+
+.text-footer {
+    width: 50%;
+    padding: 8px 0;
+}
+
+.items-menu-mobile {
+    width: 50%;
+    text-align: right;
+    display: none;
+}
+
+.items-menu-mobile i {
+    color: white;
+    position: relative;
+    top: 15px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .items-menu-mobile {
+        display: block;
+    }
+
+    .menu-mobile {
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        left: 0;
+        top: 65px;
+        background-color: white;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .show {
+        opacity: 1;
+    }
+
+    .hide {
+        opacity: 0;
+    }
+
+    .menu-mobile a {
+        text-align: center;
+        display: block;
+        margin: 8px 0;
+        color: rgb(40, 40, 40);
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 1px solid rgb(40, 40, 40);
+        padding: 8px 0;
+    }
+
+    section.main .items-menu {
+        display: none;
+    }
+
+    footer .items-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .items-menu a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .text-footer {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
 
     .diferenciais {
         flex-wrap: wrap;
